@@ -33,16 +33,25 @@ My core expertise centers around architecting self-hosted AI agent frameworks (*
 
 ## ⚡ Featured Projects Showcase
 
-### 1. 🌐 [Qrox — Multi-Model AI Chat Platform](https://qrox.vercel.app)
-> **Live Demo:** [`qrox.vercel.app`](https://qrox.vercel.app) | **Tech:** Next.js 16, Puter.js AI API, PostgreSQL, Prisma, TailwindCSS, Shadcn UI
-- **Perplexity-inspired chat UI** enabling interaction with 500+ frontier AI models (OpenAI, Claude, Gemini, Mistral, xAI) with zero API key management via innovative user-pays architecture.
-- **Dual-Authentication Engine**: JWT + Puter SDK guest mode achieving `<10s` session initialization with automatic fallback and race-condition guards.
-- **Real-Time Streaming & Vision**: Markdown rendering, syntax highlighting, multi-image vision support (10 concurrent uploads), and native AI image generation via function calling.
-- **High-Performance Persistence**: Atomic conversation persistence with balance guards achieving 99.9% data integrity and `<200ms` database latency on Vercel/PostgreSQL.
+### 1. 🔧 GPU Inference Deployment — H200 Air-Gapped Server
+> **Status:** In Progress (Sep 2026–Present) | **Tech:** Ubuntu, Docker, NVIDIA H200, vLLM, n8n, PostgreSQL, Qdrant, Prometheus, Grafana
+- **Air-Gapped Inference Stack**: Preparing a fresh Ubuntu server with dual H200 GPUs for offline operation with staged packages and container images.
+- **Integrated Services**: Running Docker services for vLLM inference, n8n workflows, PostgreSQL persistence, Qdrant vector storage, and comprehensive monitoring (Prometheus + Grafana).
+- **Domain Fine-Tuning Support**: Configured Unsloth Studio and Jupyter Notebook for domain-specific model fine-tuning alongside inference workloads.
+- **Zero-External Dependency**: Fully air-gapped design for secure enterprise deployments with no external API calls required.
 
 ---
 
-### 2. 🤖 OpenClaw AI Agent Platform — Multi-Agent Scraping Swarm
+### 2. 🌐 [Qrox — Multi-Model AI Chat Platform](https://qrox.vercel.app)
+> **Live Demo:** [`qrox.vercel.app`](https://qrox.vercel.app) | **Tech:** Next.js 16, Puter.js AI API, PostgreSQL, Prisma, TailwindCSS, Shadcn UI
+- **Perplexity-inspired chat UI** enabling interaction with 500+ frontier AI models (OpenAI, Claude, Gemini, Mistral, xAI) with zero API key management via innovative user-pays architecture.
+- **Dual-Authentication Engine**: JWT + Puter SDK guest mode with automatic fallback and race-condition guards for fast session initialization.
+- **Real-Time Streaming & Vision**: Markdown rendering, syntax highlighting, multi-image vision support (10 concurrent uploads), and native AI image generation via function calling.
+- **Atomic Persistence**: Conversation persistence with balance guards and PostgreSQL on Vercel.
+
+---
+
+### 3. 🤖 OpenClaw AI Agent Platform — Multi-Agent Scraping Swarm
 > **Stack:** OpenClaw, Docker, Firecrawl API, MySQL, OpenRouter (owl-alpha), Python/uv, Linux
 - **Self-Hosted AI Gateway**: Deployed a 2-tier agent architecture on OpenClaw proxied to OpenRouter LLMs, Firecrawl web intelligence, and MySQL persistence.
 - **Autonomous RE-Scraper Subagent**: Built zero-selector scraping autonomy that analyzes page structures, handles hidden APIs/PDFs/pagination, extracts 33 normalized fields per real-estate unit, and executes delta scraping with UPSERT deduplication.
@@ -50,7 +59,7 @@ My core expertise centers around architecting self-hosted AI agent frameworks (*
 
 ---
 
-### 3. 💼 HRAI — AI-Powered HR Conversational Assistant
+### 4. 💼 HRAI — AI-Powered HR Conversational Assistant
 > **Confidential Client, Rabat** | **Stack:** Python 3.11+, TypeScript, FastMCP, FastAPI, Ollama, Sentence Transformers, React, SQL Server, Docker
 - **Autonomous Natural-Language-to-SQL**: Transformed personnel database queries into an autonomous French conversational AI interface.
 - **Semantic Tool Contract**: Designed novel MCP tool states providing explicit dialogue guidance and next-action recommendations.
@@ -58,18 +67,11 @@ My core expertise centers around architecting self-hosted AI agent frameworks (*
 
 ---
 
-### 4. 🛍️ OmniPilot-CX — AI Sales Agent for E-Commerce (Multi-Tenant SaaS)
-> **Status:** Production-Ready MVP | **Stack:** Next.js, Node.js, PostgreSQL, Prisma, n8n, Chatwoot, Google Gemini API, FB Graph API, Docker
+### 5. 🛍️ OmniPilot-CX — AI Sales Agent for E-Commerce
+> **Status:** MVP | **Stack:** Next.js, Node.js, PostgreSQL, Prisma, n8n, Chatwoot, Google Gemini API, FB Graph API, Docker
 - **Vertical E-Commerce AI SaaS**: Transforming Moroccan merchants' Facebook Messenger inquiries into 24/7 AI sales agents with category-specific personalities for Fashion, Beauty, and Electronics.
-- **Ultra-Fast Performance**: Multi-tenant architecture supporting 1,000+ concurrent stores with sub-50ms cached PostgreSQL queries (10–100x speed improvement over external APIs).
-- **Multi-Lingual Automation**: Darija/French/English auto-detection, CSV/XLSX product import with auto-column mapping, and encrypted OAuth Facebook integration.
-
----
-
-### 5. 🛡️ Enterprise LLM System — Offline AI & Intranet RAG
-> **Confidential Client, Rabat** | **Stack:** Ollama, Open WebUI, n8n, Docker, Qdrant VectorDB, Prompt Engineering
-- **Air-Gapped Privacy**: Secure offline intranet deployment analyzing corporate documents, compliance, and legal support with zero external API dependencies using local LLMs (Qwen, DeVstral, GLM).
-- **Precision RAG Pipeline**: Custom Qdrant VectorDB workflows achieving 95% accuracy in policy violation detection.
+- **Multi-Tenant Architecture**: PostgreSQL-backed product catalog, n8n workflows, and encrypted OAuth Facebook integration.
+- **Multi-Lingual Automation**: Darija/French/English auto-detection, CSV/XLSX product import with auto-column mapping.
 
 ---
 
@@ -81,13 +83,13 @@ My core expertise centers around architecting self-hosted AI agent frameworks (*
 
 ### 7. 📊 AI Evaluation Scoring System — HR Performance Analytics
 > **Stack:** Python, CamemBERT, FastAPI, Docker
-- Internal ML pipeline fine-tuning CamemBERT for French-language sentiment analysis on employee performance evaluations, reducing review cycles by 60% with 92% human correlation.
+- Internal ML pipeline fine-tuning CamemBERT for French-language sentiment analysis on employee performance evaluations.
 
 ---
 
 ### 8. ⛽ Fuel Station Management System — MERN Stack + Computer Vision
 > **Stack:** Node.js, Express.js, MongoDB, React.js, FastAPI, Docker, Detectron2, JWT
-- Automated Moroccan license plate recognition system utilizing a custom-trained Detectron2 OCR model (94% accuracy) serving Fast-API endpoints with 99.5% uptime.
+- Fuel station operations system with MERN backend and Moroccan license plate recognition using a custom-trained Detectron2 OCR model.
 
 ---
 
