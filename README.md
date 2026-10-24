@@ -33,7 +33,15 @@ I architect autonomous agent systems for document intelligence, multilingual con
 
 ## ⚡ Featured Projects Showcase
 
-### 1. 💼 HRAI — AI-Powered HR Conversational Assistant
+### 1. 🔧 Air-Gapped Inference Cluster
+> **Status:** In Progress (Sep 2026–Present) | **Tech:** Ubuntu, Docker, NVIDIA H200, vLLM, n8n, PostgreSQL, Qdrant, Prometheus, Grafana
+- **Air-Gapped Server Prep**: Preparation of a fresh Ubuntu server with two H200 GPUs for air-gapped inference with packages and images staged while online, then operated offline.
+- **Inference Stack**: Docker services for vLLM inference, n8n workflows, PostgreSQL persistence, Qdrant vector storage, and comprehensive monitoring (Prometheus + Grafana).
+- **Fine-Tuning & Observability**: Jupyter and Unsloth Studio for domain-specific fine-tuning; Grafana and Prometheus for monitoring. Zero external dependencies at runtime.
+
+---
+
+### 2. 💼 HRAI — AI-Powered HR Conversational Assistant
 > **Confidential Client, Rabat** | **Stack:** Python 3.11+, TypeScript, FastMCP, FastAPI, Ollama, Sentence Transformers, React, SQL Server, Docker
 - **Autonomous Natural-Language-to-SQL**: Transformed personnel database queries into an autonomous French conversational AI interface.
 - **Semantic Tool Contract**: Designed novel MCP tool states providing explicit dialogue guidance and next-action recommendations.
@@ -41,7 +49,7 @@ I architect autonomous agent systems for document intelligence, multilingual con
 
 ---
 
-### 2. 🛍️ [Fleetora — Multilingual Car-Rental Marketplace](https://fleetora.vercel.app)
+### 3. 🛍️ [Fleetora — Multilingual Car-Rental Marketplace](https://fleetora.vercel.app)
 > **Live:** [`fleetora.vercel.app`](https://fleetora.vercel.app) | **Tech:** Next.js, TypeScript, PostgreSQL, Prisma, Docker | **Date:** May 23–Aug 11, 2026
 - **B2B Agency & B2C Renter Marketplace**: Full-featured rental platform for the Moroccan market with dual workflows for fleet operators and end consumers.
 - **Multilingual & Regional**: French, Arabic, and English support with North African payment and availability patterns.
@@ -49,7 +57,7 @@ I architect autonomous agent systems for document intelligence, multilingual con
 
 ---
 
-### 3. 🌐 [Qrox — Multi-Model AI Chat Platform](https://qrox.vercel.app)
+### 4. 🌐 [Qrox — Multi-Model AI Chat Platform](https://qrox.vercel.app)
 > **Live Demo:** [`qrox.vercel.app`](https://qrox.vercel.app) | **Tech:** Next.js 16, Puter.js AI API, PostgreSQL, Prisma, TailwindCSS, Shadcn UI
 - **Perplexity-inspired chat UI** enabling interaction with 500+ frontier AI models (OpenAI, Claude, Gemini, Mistral, xAI) with zero API key management via innovative user-pays architecture.
 - **Dual-Authentication Engine**: JWT + Puter SDK guest mode with automatic fallback and race-condition guards for fast session initialization.
@@ -58,7 +66,7 @@ I architect autonomous agent systems for document intelligence, multilingual con
 
 ---
 
-### 4. 🛍️ OmniPilot-CX — E-Commerce Sales Assistant for Messenger
+### 5. 🛍️ OmniPilot-CX — E-Commerce Sales Assistant for Messenger
 > **Status:** MVP | **Tech:** Next.js, Node.js, PostgreSQL, Prisma, n8n, Chatwoot, Google Gemini API, FB Graph API, Docker
 - **Vertical E-Commerce AI SaaS**: Multilingual product-management and Messenger sales-assistant workflows for e-commerce merchants, built on a PostgreSQL-backed product catalog with n8n automation and API integrations.
 - **Conversation Handling**: Handling Darija/French/English customer conversations through the Facebook Graph API.
@@ -66,46 +74,19 @@ I architect autonomous agent systems for document intelligence, multilingual con
 
 ---
 
-### 5. 🤖 OpenClaw AI Agent Platform — Multi-Agent Scraping Swarm
+### 6. 🤖 OpenClaw Real-Estate Research Agent
 > **Stack:** OpenClaw, Docker, Firecrawl API, MySQL, OpenRouter (owl-alpha), Python/uv, Linux
-- **Self-Hosted AI Gateway**: Deployed a 2-tier agent architecture on OpenClaw proxied to OpenRouter LLMs, Firecrawl web intelligence, and MySQL persistence.
-- **Autonomous RE-Scraper Subagent**: Built zero-selector scraping autonomy that analyzes page structures, handles hidden APIs/PDFs/pagination, extracts 33 normalized fields per real-estate unit, and executes delta scraping with UPSERT deduplication.
-- **Production Performance**: Extracted 262 rental units across 20 floors with 100% data integrity, automated unit conversion ($\text{sq ft} \rightarrow \text{m}^2$), and integrated OpenTelemetry diagnostics.
+- **Configured Agent Harness**: An OpenClaw agent configured to research real-estate listings with Firecrawl attached as a tool for structured collection from property websites.
+- **Structured Extraction**: Extracted records written into MySQL. Coverage: 262 units across 20 floors and four typologies.
+- **Agent Deployment**: This is a configured agent deployment on top of the open-source OpenClaw harness — not the framework itself.
 
 ---
 
-### 6. 🌐 MCP Launch — Self-Hosted MCP Gateway
+### 7. 🌐 MCP Launch — Self-Hosted MCP Gateway
 > **Tech:** Docker, Caddy, ngrok, MCP
 - **Gateway Architecture**: Docker-based gateway exposing isolated MCP servers to AI agents through Caddy reverse proxy and HTTPS tunnel.
 - **Path-Based Routing**: Route-based isolation to each server with bearer-token validation on every request.
 - **Isolated Services**: Each MCP server runs in its own container, isolated from others while exposed behind a single endpoint.
-
----
-
-### 7. 🔧 GPU Inference Deployment — H200 Air-Gapped Server
-> **Status:** In Progress (Sep 2026–Present) | **Tech:** Ubuntu, Docker, NVIDIA H200, vLLM, n8n, PostgreSQL, Qdrant, Prometheus, Grafana
-- **Air-Gapped Inference Stack**: Preparing a fresh Ubuntu server with dual H200 GPUs for offline operation with staged packages and container images.
-- **Integrated Services**: Running Docker services for vLLM inference, n8n workflows, PostgreSQL persistence, Qdrant vector storage, and comprehensive monitoring (Prometheus + Grafana).
-- **Domain Fine-Tuning Support**: Configured Unsloth Studio and Jupyter Notebook for domain-specific model fine-tuning alongside inference workloads.
-- **Zero-External Dependency**: Fully air-gapped design for secure enterprise deployments with no external API calls required.
-
----
-
-### 8. 🏥 Medical Appointment System — Full-Stack Healthcare SaaS
-> **Stack:** React, Express.js, Node.js, MySQL, Sequelize ORM, JWT, Tailwind CSS, Shadcn UI, Turborepo
-- Scalable healthcare monorepo connecting patients with healthcare providers through real-time booking, doctor availability calendars, and role-based access control (RBAC).
-
----
-
-### 9. 📊 French-Language Evaluation Scoring — HR Performance Analytics
-> **Stack:** Python, CamemBERT, FastAPI, Docker
-- CamemBERT fine-tuned on French narrative employee evaluations, serving an internal scoring workflow through FastAPI and a React interface.
-
----
-
-### 10. ⛽ Retail Operations & Plate Recognition — MERN Stack + Computer Vision
-> **Stack:** Node.js, Express.js, MongoDB, React.js, Flutter, FastAPI, Docker, Detectron2
-- Fuel-station operations software with Node.js and React backend, Flutter employee application, and Detectron2-based Moroccan license-plate recognition served through FastAPI.
 
 ---
 
