@@ -1,7 +1,7 @@
 <div align="center">
 
 # ⚡ Hicham Kraou (`oxcodexo`)
-### **Full Stack & AI Developer | AI Agent Architect**
+### **Full-Stack & AI Developer — RAG, LLM Agents & Private Deployments**
 📍 *Rabat, Morocco* 🇲🇦
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-oxcodexo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/oxcodexo)
@@ -15,19 +15,19 @@
 
 ## 🚀 About Me
 
-I am a **Full Stack & AI Developer** specializing in **AI Agent Architecture**, **Multi-Agent Autonomous Systems**, and **Production-Grade SaaS Platforms**. With a strong background in Mathematical Sciences and Software Engineering, I bridge the gap between frontier LLM research and robust, enterprise-ready software.
+I am a **Full-Stack & AI Developer** specializing in **RAG systems**, **LLM Agents**, **private model deployment**, and **production SaaS architecture**. I build end-to-end applications combining Next.js/TypeScript frontends, Node.js backends, and secure offline AI systems with local model inference.
 
-My core expertise centers around architecting self-hosted AI agent frameworks (**OpenClaw**), novel protocol patterns (such as **Semantic Tool Contracts** via **Model Context Protocol / MCP**), multi-model chat applications handling 500+ frontier models, and secure offline enterprise RAG pipelines.
+I architect autonomous agent systems for document intelligence, multilingual conversational interfaces, and enterprise workflow automation — always with a focus on data privacy and offline-first deployments.
 
 ---
 
 ## 🛠️ Core Expertise & Architectural Innovations
 
-- 🤖 **AI Agent Systems & Multi-Agent Swarms**: Architecting multi-agent orchestration engines on OpenClaw, intent routing, tool-using autonomous agents, and zero-selector web scraping pipelines (Firecrawl API).
-- 🧩 **Semantic Tool Contracts (MCP)**: Pioneered tool architecture patterns where MCP microservices return explicit semantic execution states (`NO_DATA_FOUND`, `SUCCESS_WITH_DATA`, `ERROR`) and active dialogue guidance.
-- 🏗️ **Full-Stack SaaS Architecture**: Building high-throughput, multi-tenant applications with Next.js 16, React, Node.js, NestJS, TypeScript, PostgreSQL, and Prisma ORM.
-- 📐 **Hybrid Text-to-SQL (LEGO Assembly)**: Engineered modular Text-to-SQL pipelines combining pre-verified schema joins with flexible LLM filter clauses to solve the reliability-flexibility paradox.
-- 🛡️ **Enterprise Offline AI & Fine-Tuning**: Designing zero-external-dependency intranet RAG engines using Ollama, Qdrant VectorDB, and fine-tuned domain models (CamemBERT, Detectron2 OCR).
+- 🤖 **Autonomous AI Agents & Workflows**: Building multi-agent systems for document intelligence, data extraction, and workflow automation; implementing semantic tool contracts and dialogue guidance patterns.
+- 🧩 **Semantic Tool Design (MCP)**: Architecting tool microservices with explicit execution states and next-action guidance for robust agent reasoning.
+- 🏗️ **Full-Stack SaaS Architecture**: Designing and shipping production applications: Next.js 16, React, Node.js, NestJS, TypeScript, PostgreSQL, Prisma, multi-tenant isolation.
+- 📐 **Text-to-SQL at Scale**: Engineering modular Text-to-SQL pipelines combining schema verification with flexible LLM-generated filters.
+- 🛡️ **Private & Offline AI**: Building zero-external-dependency intranet RAG systems using Ollama, Qdrant, and domain-fine-tuned models.
 
 ---
 
@@ -67,29 +67,45 @@ My core expertise centers around architecting self-hosted AI agent frameworks (*
 
 ---
 
-### 5. 🛍️ OmniPilot-CX — AI Sales Agent for E-Commerce
-> **Status:** MVP | **Stack:** Next.js, Node.js, PostgreSQL, Prisma, n8n, Chatwoot, Google Gemini API, FB Graph API, Docker
-- **Vertical E-Commerce AI SaaS**: Transforming Moroccan merchants' Facebook Messenger inquiries into 24/7 AI sales agents with category-specific personalities for Fashion, Beauty, and Electronics.
-- **Multi-Tenant Architecture**: PostgreSQL-backed product catalog, n8n workflows, and encrypted OAuth Facebook integration.
-- **Multi-Lingual Automation**: Darija/French/English auto-detection, CSV/XLSX product import with auto-column mapping.
+### 5. 🛍️ OmniPilot-CX — E-Commerce Sales Assistant for Messenger
+> **Status:** MVP | **Tech:** Next.js, Node.js, PostgreSQL, Prisma, n8n, Chatwoot, Google Gemini API, FB Graph API, Docker
+- **Vertical E-Commerce AI SaaS**: Multilingual product-management and Messenger sales-assistant workflows for e-commerce merchants, built on a PostgreSQL-backed product catalog with n8n automation and API integrations.
+- **Conversation Handling**: Handling Darija/French/English customer conversations through the Facebook Graph API.
+- **Order Capture**: Workflow orchestration around product catalog with language-aware responses.
 
 ---
 
-### 6. 🏥 Medical Appointment System — Full-Stack Healthcare SaaS
+### 6. 🌐 MCP Launch — Self-Hosted MCP Gateway
+> **Tech:** Docker, Caddy, ngrok, MCP
+- **Gateway Architecture**: Docker-based gateway exposing isolated MCP servers to AI agents through Caddy reverse proxy and HTTPS tunnel.
+- **Path-Based Routing**: Route-based isolation to each server with bearer-token validation on every request.
+- **Isolated Services**: Each MCP server runs in its own container, isolated from others while exposed behind a single endpoint.
+
+---
+
+### 7. 🛍️ [Fleetora — Multilingual Car-Rental Marketplace](https://fleetora.vercel.app)
+> **Live:** [`fleetora.vercel.app`](https://fleetora.vercel.app) | **Tech:** Next.js, TypeScript, PostgreSQL, Prisma, Docker | **Date:** May 23–Aug 11, 2026
+- **B2B Agency & B2C Renter Marketplace**: Full-featured rental platform for the Moroccan market with dual workflows for fleet operators and end consumers.
+- **Multilingual & Regional**: French, Arabic, and English support with North African payment and availability patterns.
+- **Production-Ready**: Fully hosted on Vercel with PostgreSQL backend; documented agency/renter feature sets.
+
+---
+
+### 8. 🏥 Medical Appointment System — Full-Stack Healthcare SaaS
 > **Stack:** React, Express.js, Node.js, MySQL, Sequelize ORM, JWT, Tailwind CSS, Shadcn UI, Turborepo
 - Scalable healthcare monorepo connecting patients with healthcare providers through real-time booking, doctor availability calendars, and role-based access control (RBAC).
 
 ---
 
-### 7. 📊 AI Evaluation Scoring System — HR Performance Analytics
+### 9. 📊 French-Language Evaluation Scoring — HR Performance Analytics
 > **Stack:** Python, CamemBERT, FastAPI, Docker
-- Internal ML pipeline fine-tuning CamemBERT for French-language sentiment analysis on employee performance evaluations.
+- CamemBERT fine-tuned on French narrative employee evaluations, serving an internal scoring workflow through FastAPI and a React interface.
 
 ---
 
-### 8. ⛽ Fuel Station Management System — MERN Stack + Computer Vision
-> **Stack:** Node.js, Express.js, MongoDB, React.js, FastAPI, Docker, Detectron2, JWT
-- Fuel station operations system with MERN backend and Moroccan license plate recognition using a custom-trained Detectron2 OCR model.
+### 10. ⛽ Retail Operations & Plate Recognition — MERN Stack + Computer Vision
+> **Stack:** Node.js, Express.js, MongoDB, React.js, Flutter, FastAPI, Docker, Detectron2
+- Fuel-station operations software with Node.js and React backend, Flutter employee application, and Detectron2-based Moroccan license-plate recognition served through FastAPI.
 
 ---
 
